@@ -1,1 +1,1 @@
-Write-ups from my experience in various [Technology Management](https://catalog.tamu.edu/undergraduate/education-human-development/educational-administration-human-resource-development/technology-management-bs/#programrequirementstext) courses at Texas A&M University!
+Write-ups from my experience in various [Technology Management](https://catalog.tamu.edu/undergraduate/course-descriptions/tcmg/) courses at Texas A&M University!
