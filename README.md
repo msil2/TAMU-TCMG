@@ -1,4 +1,4 @@
-Write-ups from my experience in various [Technology Management]https://catalog.tamu.edu/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/) [courses](https://catalog.tamu.edu/undergraduate/course-descriptions/tcmg/) at Texas A&M University!
+Write-ups from my experience in various [Technology Management](https://catalog.tamu.edu/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/) [courses](https://catalog.tamu.edu/undergraduate/course-descriptions/tcmg/) at Texas A&M University!
 
 
 
