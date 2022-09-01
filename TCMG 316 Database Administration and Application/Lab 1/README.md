@@ -43,3 +43,4 @@ Return the number of products (rows) in the 'products' table.
 
 ![image](https://user-images.githubusercontent.com/99063625/188028889-8a870463-1456-44bf-aca8-5dbebf5cf31a.png)
 Execute 'product_details.sql' script.
+
