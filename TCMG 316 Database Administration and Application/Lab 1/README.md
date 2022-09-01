@@ -1,5 +1,7 @@
 # Lab Assignment 1
 
+This lab assignment is my first, concentrated experience with MySQL data analysis. Once upon a time, I was working on an easy HackTheBox challenge that required me to exploit SQL. Unfortunately, I had no clue about what was going on, so I had to waste valuable exploitation time searching Google for how to break SQL in a specific environment. With the labs from this course, I hope to establish a general, foundational knowledge of SQL structures and commands that will strenghthen the scope and power of my penetration testing skills. This lab will serve as one of the many steps I take towards a career in cybersecurity!   
+
 ## Before you start the exercise...
 
 * Install the MySQL server and MySQL WOrkbench.
