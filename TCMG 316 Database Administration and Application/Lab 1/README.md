@@ -50,5 +50,36 @@ Return the number of products (rows) in the 'products' table.
 
 ![image](https://user-images.githubusercontent.com/99063625/188028889-8a870463-1456-44bf-aca8-5dbebf5cf31a.png)
 
-Execute 'product_details.sql' script.
+Execute the 'product_details.sql' script.
 
+![image](https://user-images.githubusercontent.com/99063625/188029675-aec5a213-4282-4b32-a9ea-3df677eb54f5.png)
+
+Execute the 'product_summary.sql' script.
+
+![image](https://user-images.githubusercontent.com/99063625/188030042-619d273c-cfd6-4da6-87a5-4d8c3178b047.png)
+
+![image](https://user-images.githubusercontent.com/99063625/188030082-67976c34-6294-411f-94fa-915b644cdf63.png)
+
+Execute the 'product_statements.sql' script and view the two tabs of the results. 
+
+![image](https://user-images.githubusercontent.com/99063625/188030304-9772bd56-fde1-4338-88e8-6cd48387885c.png)
+
+Execute only the first statement of the 'product_statements.sql' script.
+
+![image](https://user-images.githubusercontent.com/99063625/188030353-492fb0d4-b3d0-420e-bfbf-4bf6a98dcad0.png)
+
+Execute only the second statement of the 'product_statements.sql' script.
+
+### Use MySQL Command Line Client
+
+![image](https://user-images.githubusercontent.com/99063625/188030467-23c6e35e-a11c-4a97-8608-4875290ec740.png)
+
+Log in.
+
+![image](https://user-images.githubusercontent.com/99063625/188030625-a90c07a4-c796-402a-87b3-d5a8af4fcee7.png)
+
+Show all databases managed by the servver and select the 'my_guitar_shop' database.
+
+![image](https://user-images.githubusercontent.com/99063625/188030947-ba5ea943-2a45-4f4d-8e26-ae52147e6c4f.png)
+
+Select 10 'product_name' rows from the 'products' table.
