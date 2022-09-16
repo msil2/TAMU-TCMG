@@ -99,16 +99,16 @@ We assume you have already installed MySQL server and Workbench, as well as the 
     
 23. Use MySQL Workbench to create an EER model for a database that stores information about the downloads that users make. (When you create the EER model, it will be given a default name of mydb. For this exercise, it’s not necessary to change this name.) Define the tables that are necessary to implement this data structure:
 
-Each user must have an email address, first name, and last name.
+    Each user must have an email address, first name, and last name.
 
-Each user can have one or more downloads.
+    Each user can have one or more downloads.
 
-Each download must have a filename and download date/time.
+    Each download must have a filename and download date/time.
 
-Each product can be related to one or more downloads.
+    Each product can be related to one or more downloads.
 
-Each product must have a name.
+    Each product must have a name.
 
-When you’re done defining the tables, create a diagram for the database. Then, use the diagram to define the required relationships. When you do that, be sure to use the relationship button that uses existing columns.
+    When you’re done defining the tables, create a diagram for the database. Then, use the diagram to define the required relationships. When you do that, be sure to use the relationship button that uses existing columns.
 
 24. Use MySQL Workbench to open the EER model that you created in step 23. Then, export a script that creates the database. Use all the default options, and save the script in a file named Lab2.sql.
