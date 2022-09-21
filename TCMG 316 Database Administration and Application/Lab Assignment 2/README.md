@@ -6,29 +6,74 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 ### Retrieve data from a single table
 
-1. Write a SELECT statement that returns four columns from the Products table: product_code, product_name, list_price, and discount_percent, and sorts the result set by list price in descending sequence. Then, run this statement to make sure it works correctly.
+1. Write a SELECT statement that returns four columns from the Products table: product_code, product_name, list_price, discount_percent, and sorts the result set by list price in descending sequence. Then, run this statement to make sure it works correctly.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191461950-3e86c512-e68f-4c26-8317-608ada0c7ed1.png">
+</p>
 
 2. Write a SELECT statement that returns one column from the Customers table named full_name that joins the last_name and first_name columns. 
 
-   Format this column with the last name, a comma, a space, and the first name like this: `Doe, John`
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191465806-4e538424-12b6-4212-8ad3-abed0dfc2d11.png">
+</p>
+
+- Format this column with the last name, a comma, a space, and the first name like this: Doe, John
+ 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191471718-d75003be-db93-437e-a899-b22b4495c539.png">
+</p>
    
-   Sort the result set by the last_name column in ascending sequence.
+- Sort the result set by the last_name column in ascending sequence.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191471981-865d04f3-af22-44a4-8d8e-15b903374965.png">
+</p>
    
-   Return only the customers whose last name begins with letters from M to Z. NOTE: When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. For example, ‘M’ comes before ‘Murach'.
+- Return only the customers whose last name begins with letters from M to Z. NOTE: When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. For example, ‘M’ comes before ‘Murach'.
+   
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191477075-75050706-b521-40a2-8318-b7a09cae56ec.png">
+</p>
    
 3. Write a SELECT statement that returns these columns from the Products table: product_name, list_price, date_added.
-      
-   Return only the rows with a list price that's greater than 500 and less than 2000.
-   
-   Sort the result set by the date_added column in descending sequence.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191477603-2c1b0332-c049-4c2b-a378-1aeac11b43b2.png">
+</p>
+
+- Return only the rows with a list price that's greater than 500 and less than 2000.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191479797-57957b55-1f4b-43a1-b368-b8b18e921b60.png">
+</p>   
+
+- Sort the result set by the date_added column in descending sequence.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191479565-638ed3ae-ae91-4f89-a3f7-4f237eb0d2d6.png">
+</p>
+
    
 4. Write a SELECT statement that returns these column names and data from the Products table: product_name, list_price, discount_percent, discount_amount (calculated from the previous two columns), discount_price (calculated from the previous three columns).
    
-   Round the discount_amount and discount_price columns to 2 decimal places.
+ <p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191483592-946ca1ad-ad3f-4dab-94ca-bc5983f24343.png">
+</p>   
    
-   Sort the result set by the discount_price column in descending sequence.
+- Round the discount_amount and discount_price columns to 2 decimal places.
+ 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191484458-0efc787a-2a07-4f19-9809-c5c9d9d4cac7.png">
+</p>   
+ 
+- Sort the result set by the discount_price column in descending sequence.
    
-   Use the LIMIT clause so the result set contains only the first 5 rows.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191484828-9281ae39-c72b-4519-8be7-83e27180adf7.png">
+</p>   
+   
+- Use the LIMIT clause so the result set contains only the first 5 rows.
    
 5. Write a SELECT statement that returns these column names and data from the Order_Items table: item_id, discount_amount, quantity, price_total (multiply item price by quantity), discount_total (multiply discount amount by quantity), item_total (subtract discount amount from item price, then multiply by quantity).
  
