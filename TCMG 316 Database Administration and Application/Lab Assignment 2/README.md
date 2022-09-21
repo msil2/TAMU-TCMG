@@ -74,43 +74,66 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 </p>   
    
 - Use the LIMIT clause so the result set contains only the first 5 rows.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191608603-bad5ca29-edbb-4362-acb2-1029f93f464a.png">
+</p>   
    
 5. Write a SELECT statement that returns these column names and data from the Order_Items table: item_id, discount_amount, quantity, price_total (multiply item price by quantity), discount_total (multiply discount amount by quantity), item_total (subtract discount amount from item price, then multiply by quantity).
  
-   Only return rows where the item_total is greater than 500.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191610409-8c2e0833-15b7-41b6-87f1-2e66c0ff561f.png">
+</p>  
+ 
+- Only return rows where the item_total is greater than 500.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191611763-2e6190e5-dffa-47b3-b3f6-84f85f9043bf.png">
+</p> 
+
+- Sort the result set by the item_total column in descending sequence.
    
-   Sort the result set by the item_total column in descending sequence.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191611917-6f25159c-049b-46dc-a291-8b36eb44ea87.png">
+</p> 
    
 6. Write a SELECT statement that returns these columns from the Orders table: order_id, order_date, ship_date.
 
-   Return only the rows where the ship_date column contains a null value.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191612335-4ad64fd8-3446-4403-91e5-23adf65a2910.png">
+</p>   
+
+- Return only the rows where the ship_date column contains a null value.
    
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191612671-4d07af82-e7dc-4f7b-972c-ae23651477d7.png">
+</p>   
+
 7. Write a SELECT statement without a FROM clause that creates a row with these columns: price, (100 dollars) tax_rate (.07), tax_amount (price multiplied by tax), total (price plus tax).
 
-   To calculate the fourth column, add the expressions you used for the first and third columns.
+- To calculate the fourth column, add the expressions you used for the first and third columns.
    
 ### Retrieve data from multiple tables
 
 8. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
 
-   Return one row for each address for the customer with an email address of allan.sherwood@yahoo.com.
+- Return one row for each address for the customer with an email address of allan.sherwood@yahoo.com.
    
 9. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
 
-   Return one row for each customer, but only return addresses that are the shipping address for a customer.
+- Return one row for each customer, but only return addresses that are the shipping address for a customer.
    
 10. Write a SELECT statement that joins the Customers, Orders, Order_Items, and Products tables. This statement should return these columns: last_name, first_name, order_date, product_name, item_price, discount_amount, and quantity. 
 
-    Use aliases for the tables. 
+- Use aliases for the tables. 
    
-    Sort the final result set by the last_name, order_date, and product_name columns.
+- Sort the final result set by the last_name, order_date, and product_name columns.
    
 11. Write a SELECT statement that returns the product_name and list_price columns from the Products table.
 
-    Return one row for each product that has the same list price as another product. Hint: Use a self-join to check that the product_id columns aren’t equal but the list_price columns are equal.
-   
-   
-    Sort the result set by the product_name column
+- Return one row for each product that has the same list price as another product. Hint: Use a self-join to check that the product_id columns aren’t equal but the list_price columns are equal.
+    
+- Sort the result set by the product_name column
    
 12. Write an INSERT statement that adds this row to the Categories table: category_name: Brass 
 
