@@ -53,8 +53,7 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191479565-638ed3ae-ae91-4f89-a3f7-4f237eb0d2d6.png">
 </p>
-
-   
+ 
 4. Write a SELECT statement that returns these column names and data from the Products table: product_name, list_price, discount_percent, discount_amount (calculated from the previous two columns), discount_price (calculated from the previous three columns).
    
  <p align="center">
@@ -143,11 +142,27 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 10. Write a SELECT statement that joins the Customers, Orders, Order_Items, and Products tables. This statement should return these columns: last_name, first_name, order_date, product_name, item_price, discount_amount, and quantity. 
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191643255-8c768f21-f01b-4491-af9f-b9dc9a1f6be8.png">
+</p>   
+
 - Use aliases for the tables. 
    
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191645193-79a004be-7216-44cf-bfe9-7ad5c3e052c3.png">
+</p>     
+  
 - Sort the final result set by the last_name, order_date, and product_name columns.
+ 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191645462-e63defea-6c65-419f-917a-681f2ddd7293.png">
+</p>        
    
 11. Write a SELECT statement that returns the product_name and list_price columns from the Products table.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191645668-fd08846a-0381-4edf-9e5d-7fc2b95fc38e.png">
+</p>     
 
 - Return one row for each product that has the same list price as another product. Hint: Use a self-join to check that the product_id columns aren’t equal but the list_price columns are equal.
     
@@ -155,7 +170,11 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    
 12. Write an INSERT statement that adds this row to the Categories table: category_name: Brass 
 
-    Code the INSERT statement so MySQL automatically generates the category_id column.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191648400-649abf5b-be96-46bc-869c-ae826c48addb.png">
+</p>   
+
+- Code the INSERT statement so MySQL automatically generates the category_id column.
     
 14. Write an UPDATE statement that modifies the row you just added to the Categories table. This statement should change the product_name column to “Woodwinds”, and it should use the category_id column to identify the row.
 
@@ -163,7 +182,7 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 16. Write an INSERT statement that adds this row to the Products table: product_id (The next automatically generated ID), category_id (4), product_code (dgx_640), product_name (Yamaha DGX 640 88-Key Digital Piano), description (Long description to come), list_price (799.99), discount_percent (0), date_added (Today’s date/time).
 
-    Use a column list for this statement.
+- Use a column list for this statement.
     
 17. Write an UPDATE statement that modifies the product you added in step 16. This statement should change the discount_percent column from 0% to 35%.
 
