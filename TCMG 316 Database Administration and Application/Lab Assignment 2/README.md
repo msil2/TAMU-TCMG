@@ -120,11 +120,28 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 18. Write a DELETE statement that deletes the Keyboards category. When you execute this statement, it will produce an error since the category has related rows in the Products table. To fix that, precede the DELETE statement with another DELETE statement that deletes all products in this category. (Remember that to code two or more statements in a script, you must end each statement with a semicolon.
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191656222-be6665cf-261c-42e6-a44a-c04f80e0dbb8.png">
+</p>   
+
 19. Write an INSERT statement that adds this row to the Customers table: email_address (rick@raven.com), password (empty string), first_name (Rick), last_name (Raven).
 
-    Use a column list for this statement.
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/99063625/191656990-970f93d8-0690-47b5-bc36-a50d5dec742f.png">
+</p>   
+
+- Use a column list for this statement.
+
+<p align="center">
+  <img width="560" height="300" src="https://user-images.githubusercontent.com/99063625/191657122-5943ce93-5b8a-431d-ab7f-832e419a7e2b.png">
+</p>       
     
 20. Write an UPDATE statement that modifies the Customers table. Change the password column to “secret” for the customer with an email address of rick@raven.com
+
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/99063625/191657616-6e5ab4e3-926c-47ae-a076-c0f186eb46ef.png">
+</p>       
+    
 
 21. Open the script named create_my_guitar_shop.sql that’s in the mgs_ex_starts directory. Then, run this script. That should restore the data that’s in the database.
 
