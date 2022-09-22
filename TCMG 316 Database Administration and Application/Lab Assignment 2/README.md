@@ -90,13 +90,33 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 14. Write an UPDATE statement that modifies the row you just added to the Categories table. This statement should change the product_name column to “Woodwinds”, and it should use the category_id column to identify the row.
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191652453-0e7860d0-5d04-4e47-bd4d-92f43fce73cd.png">
+</p> 
+
 15. Write a DELETE statement that deletes the row you added to the Categories table in exercise 1. This statement should use the category_id column to identify the row.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191652659-ae607815-f2ba-4f3c-adf6-c0a164916de9.png">
+</p>   
 
 16. Write an INSERT statement that adds this row to the Products table: product_id (The next automatically generated ID), category_id (4), product_code (dgx_640), product_name (Yamaha DGX 640 88-Key Digital Piano), description (Long description to come), list_price (799.99), discount_percent (0), date_added (Today’s date/time).
 
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/99063625/191654493-56e2d90c-9992-43e0-a9f5-88b5ae4840f7.png">
+</p>      
+
 - Use a column list for this statement.
     
+<p align="center">
+  <img width="560" height="300" src="https://user-images.githubusercontent.com/99063625/191654413-f08110b7-3111-41d4-9121-72e13c310496.png">
+</p>    
+
 17. Write an UPDATE statement that modifies the product you added in step 16. This statement should change the discount_percent column from 0% to 35%.
+
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/99063625/191655078-3325abe9-01d4-41aa-b84d-5960f98051a1.png">
+</p>   
 
 18. Write a DELETE statement that deletes the Keyboards category. When you execute this statement, it will produce an error since the category has related rows in the Products table. To fix that, precede the DELETE statement with another DELETE statement that deletes all products in this category. (Remember that to code two or more statements in a script, you must end each statement with a semicolon.
 
