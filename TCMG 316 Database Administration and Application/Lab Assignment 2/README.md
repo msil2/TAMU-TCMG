@@ -12,97 +12,31 @@ We assume you have already installed MySQL server and Workbench, as well as the 
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191461950-3e86c512-e68f-4c26-8317-608ada0c7ed1.png">
 </p>
 
-2. Write a SELECT statement that returns one column from the Customers table named full_name that joins the last_name and first_name columns. 
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191465806-4e538424-12b6-4212-8ad3-abed0dfc2d11.png">
-</p>
-
-- Format this column with the last name, a comma, a space, and the first name like this: Doe, John
- 
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191471718-d75003be-db93-437e-a899-b22b4495c539.png">
-</p>
-   
-- Sort the result set by the last_name column in ascending sequence.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191471981-865d04f3-af22-44a4-8d8e-15b903374965.png">
-</p>
-   
-- Return only the customers whose last name begins with letters from M to Z. NOTE: When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. For example, ‘M’ comes before ‘Murach'.
+2. Write a SELECT statement that returns one column from the Customers table named full_name that joins the last_name and first_name columns.  Format this column with the last name, a comma, a space, and the first name like this: Doe, John. Sort the result set by the last_name column in ascending sequence. Return only the customers whose last name begins with letters from M to Z. NOTE: When comparing strings of characters, ‘M’ comes before any string of characters that begins with ‘M’. For example, ‘M’ comes before ‘Murach'.
    
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191477075-75050706-b521-40a2-8318-b7a09cae56ec.png">
 </p>
    
-3. Write a SELECT statement that returns these columns from the Products table: product_name, list_price, date_added.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191477603-2c1b0332-c049-4c2b-a378-1aeac11b43b2.png">
-</p>
-
-- Return only the rows with a list price that's greater than 500 and less than 2000.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191479797-57957b55-1f4b-43a1-b368-b8b18e921b60.png">
-</p>   
-
-- Sort the result set by the date_added column in descending sequence.
+3. Write a SELECT statement that returns these columns from the Products table: product_name, list_price, date_added. Return only the rows with a list price that's greater than 500 and less than 2000. Sort the result set by the date_added column in descending sequence.
 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191479565-638ed3ae-ae91-4f89-a3f7-4f237eb0d2d6.png">
 </p>
  
-4. Write a SELECT statement that returns these column names and data from the Products table: product_name, list_price, discount_percent, discount_amount (calculated from the previous two columns), discount_price (calculated from the previous three columns).
-   
- <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191483592-946ca1ad-ad3f-4dab-94ca-bc5983f24343.png">
-</p>   
-   
-- Round the discount_amount and discount_price columns to 2 decimal places.
- 
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191484458-0efc787a-2a07-4f19-9809-c5c9d9d4cac7.png">
-</p>   
- 
-- Sort the result set by the discount_price column in descending sequence.
-   
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191484828-9281ae39-c72b-4519-8be7-83e27180adf7.png">
-</p>   
-   
-- Use the LIMIT clause so the result set contains only the first 5 rows.
+4. Write a SELECT statement that returns these column names and data from the Products table: product_name, list_price, discount_percent, discount_amount (calculated from the previous two columns), discount_price (calculated from the previous three columns). Round the discount_amount and discount_price columns to 2 decimal places. Sort the result set by the discount_price column in descending sequence. Use the LIMIT clause so the result set contains only the first 5 rows.
 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191608603-bad5ca29-edbb-4362-acb2-1029f93f464a.png">
 </p>   
    
-5. Write a SELECT statement that returns these column names and data from the Order_Items table: item_id, discount_amount, quantity, price_total (multiply item price by quantity), discount_total (multiply discount amount by quantity), item_total (subtract discount amount from item price, then multiply by quantity).
- 
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191610409-8c2e0833-15b7-41b6-87f1-2e66c0ff561f.png">
-</p>  
- 
-- Only return rows where the item_total is greater than 500.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191611763-2e6190e5-dffa-47b3-b3f6-84f85f9043bf.png">
-</p> 
-
-- Sort the result set by the item_total column in descending sequence.
+5. Write a SELECT statement that returns these column names and data from the Order_Items table: item_id, discount_amount, quantity, price_total (multiply item price by quantity), discount_total (multiply discount amount by quantity), item_total (subtract discount amount from item price, then multiply by quantity). Only return rows where the item_total is greater than 500. Sort the result set by the item_total column in descending sequence.
    
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191611917-6f25159c-049b-46dc-a291-8b36eb44ea87.png">
 </p> 
    
-6. Write a SELECT statement that returns these columns from the Orders table: order_id, order_date, ship_date.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191612335-4ad64fd8-3446-4403-91e5-23adf65a2910.png">
-</p>   
-
-- Return only the rows where the ship_date column contains a null value.
+6. Write a SELECT statement that returns these columns from the Orders table: order_id, order_date, ship_date. Return only the rows where the ship_date column contains a null value.
    
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191612671-4d07af82-e7dc-4f7b-972c-ae23651477d7.png">
@@ -116,43 +50,19 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    
 ### Retrieve data from multiple tables
 
-8. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191637996-346ed3cd-c426-4662-af91-bd47304c417d.png">
-</p>   
-
-- Return one row for each address for the customer with an email address of allan.sherwood@yahoo.com.
+8. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code. Return one row for each address for the customer with an email address of allan.sherwood@yahoo.com.
 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191638115-a08790b1-e21b-4bf6-aa5d-736463176669.png">
 </p>   
    
-9. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191638538-587571b9-3307-4679-8354-fe5feef5513d.png">
-</p>   
-
-- Return one row for each customer, but only return addresses that are the shipping address for a customer.
+9. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code. Return one row for each customer, but only return addresses that are the shipping address for a customer.
 
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191639796-d8e3006c-0f4c-440c-9fc1-9d60efbbeb8d.png">
 </p>   
 
-10. Write a SELECT statement that joins the Customers, Orders, Order_Items, and Products tables. This statement should return these columns: last_name, first_name, order_date, product_name, item_price, discount_amount, and quantity. 
-
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191643255-8c768f21-f01b-4491-af9f-b9dc9a1f6be8.png">
-</p>   
-
-- Use aliases for the tables. 
-   
-<p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191645193-79a004be-7216-44cf-bfe9-7ad5c3e052c3.png">
-</p>     
-  
-- Sort the final result set by the last_name, order_date, and product_name columns.
+10. Write a SELECT statement that joins the Customers, Orders, Order_Items, and Products tables. This statement should return these columns: last_name, first_name, order_date, product_name, item_price, discount_amount, and quantity. Use aliases for the tables. Sort the final result set by the last_name, order_date, and product_name columns.
  
 <p align="center">
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191645462-e63defea-6c65-419f-917a-681f2ddd7293.png">
@@ -168,14 +78,16 @@ We assume you have already installed MySQL server and Workbench, as well as the 
     
 - Sort the result set by the product_name column
    
-12. Write an INSERT statement that adds this row to the Categories table: category_name: Brass 
+12. Write a SELECT statement that returns these two columns: category_name (The category_name column from the Categories table) and product_id (The product_id column from the Products table). Return one row for each category that has never been used. Hint: Use an outer join and only return rows where the product_id column contains a null value.
+
+### Insert, update, and delete data 
+
+13.  Write an INSERT statement that adds this row to the Categories table: category_name: Brass. Code the INSERT statement so MySQL automatically generates the category_id column.
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191648400-649abf5b-be96-46bc-869c-ae826c48addb.png">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191648967-2dbc31ae-5982-4909-af65-f10156229ba8.png">
 </p>   
 
-- Code the INSERT statement so MySQL automatically generates the category_id column.
-    
 14. Write an UPDATE statement that modifies the row you just added to the Categories table. This statement should change the product_name column to “Woodwinds”, and it should use the category_id column to identify the row.
 
 15. Write a DELETE statement that deletes the row you added to the Categories table in exercise 1. This statement should use the category_id column to identify the row.
