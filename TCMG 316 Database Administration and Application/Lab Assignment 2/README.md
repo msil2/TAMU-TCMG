@@ -109,20 +109,38 @@ We assume you have already installed MySQL server and Workbench, as well as the 
   <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191612671-4d07af82-e7dc-4f7b-972c-ae23651477d7.png">
 </p>   
 
-7. Write a SELECT statement without a FROM clause that creates a row with these columns: price, (100 dollars) tax_rate (.07), tax_amount (price multiplied by tax), total (price plus tax).
+7. Write a SELECT statement without a FROM clause that creates a row with these columns: price, (100 dollars) tax_rate (.07), tax_amount (price multiplied by tax), total (price plus tax). To calculate the fourth column, add the expressions you used for the first and third columns.
 
-- To calculate the fourth column, add the expressions you used for the first and third columns.
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191635417-34c9b75f-3b93-4509-ba0f-daaa1b89feda.png">
+</p>  
    
 ### Retrieve data from multiple tables
 
 8. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191637996-346ed3cd-c426-4662-af91-bd47304c417d.png">
+</p>   
+
 - Return one row for each address for the customer with an email address of allan.sherwood@yahoo.com.
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191638115-a08790b1-e21b-4bf6-aa5d-736463176669.png">
+</p>   
    
 9. Write a SELECT statement that joins the Customers table to the Addresses table and returns these columns: first_name, last_name, line1, city, state, zip_code.
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191638538-587571b9-3307-4679-8354-fe5feef5513d.png">
+</p>   
+
 - Return one row for each customer, but only return addresses that are the shipping address for a customer.
-   
+
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/99063625/191639796-d8e3006c-0f4c-440c-9fc1-9d60efbbeb8d.png">
+</p>   
+
 10. Write a SELECT statement that joins the Customers, Orders, Order_Items, and Products tables. This statement should return these columns: last_name, first_name, order_date, product_name, item_price, discount_amount, and quantity. 
 
 - Use aliases for the tables. 
