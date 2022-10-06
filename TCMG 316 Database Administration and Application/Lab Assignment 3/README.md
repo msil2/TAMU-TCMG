@@ -5,9 +5,9 @@ Exercises
 We assume you have already installed MySQL server and Workbench, as well as the My Guitar Shop database with original data. In these exercises, you’ll use MySQL Workbench to work on the My Guitar Shop database and submit queries to this database. 
  
 Code summary queries 
-1.	Write a SELECT statement that returns these columns: 
-The count of the number of orders in the Orders table 
-The sum of the tax_amount columns in the Orders table 
+1.	Write a SELECT statement that returns these columns:   
+The count of the number of orders in the Orders table   
+The sum of the tax_amount columns in the Orders table   
 
 ![image](https://user-images.githubusercontent.com/99063625/194417047-3a176da3-fdb1-4592-9965-c59247c12a44.png)
 
