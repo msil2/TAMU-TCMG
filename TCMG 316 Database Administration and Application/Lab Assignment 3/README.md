@@ -6,17 +6,18 @@ We assume you have already installed MySQL server and Workbench, as well as the 
  
 Code summary queries 
 1.	Write a SELECT statement that returns these columns:   
-      The count of the number of orders in the Orders table   
-      The sum of the tax_amount columns in the Orders table   
+The count of the number of orders in the Orders table   
+The sum of the tax_amount columns in the Orders table   
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/99063625/194417047-3a176da3-fdb1-4592-9965-c59247c12a44.png">
 </p>
 
-2.	Write a SELECT statement that returns one row for each category that has products with these columns: 
-The category_name column from the Categories table 
-The count of the products in the Products table 
-The list price of the most expensive product in the Products table Sort the result set so the category with the most products appears first. 
+2.	Write a SELECT statement that returns one row for each category that has products with these columns:   
+The category_name column from the Categories table  
+The count of the products in the Products table  
+The list price of the most expensive product in the Products table Sort the result set so the category with the most products appears first.  
+
 3.	Write a SELECT statement that returns one row for each customer that has orders with these columns: 
 The email_address column from the Customers table 
 The sum of the item price in the Order_Items table multiplied by the quantity in the Order_Items table 
