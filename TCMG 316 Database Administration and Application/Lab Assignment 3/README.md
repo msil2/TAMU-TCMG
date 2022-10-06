@@ -9,7 +9,10 @@ Code summary queries
 The count of the number of orders in the Orders table   
 The sum of the tax_amount columns in the Orders table   
 
-![image](https://user-images.githubusercontent.com/99063625/194417047-3a176da3-fdb1-4592-9965-c59247c12a44.png)
+
+<p align="center">
+  <img width="560" height="400" src="https://user-images.githubusercontent.com/99063625/194417047-3a176da3-fdb1-4592-9965-c59247c12a44.png">
+</p>
 
 2.	Write a SELECT statement that returns one row for each category that has products with these columns: 
 The category_name column from the Categories table 
