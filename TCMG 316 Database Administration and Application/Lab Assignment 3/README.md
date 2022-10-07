@@ -46,19 +46,27 @@ Sort the result set in descending sequence by the sum of the line item amounts.
 
 5.	Modify the solution to exercise 4 so it only counts and totals line items that have an item_price value that’s greater than 400.  
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194432247-71cd76c4-9d84-49e5-b55f-200f98fd58ee.png">
+</p>
 
 6. Write a SELECT statement that answers this question: What is the total amount ordered for each product? Return these columns:  
 The product_name column from the Products table  
 The total amount for each product in the Order_Items table (Hint: You can calculate the total amount by subtracting the discount amount from the item price and then multiplying it by the quantity)  
 Use the WITH ROLLUP operator to include a row that gives the grand total.  
-Note: Once you add the WITH ROLLUP operator, you may need to use MySQL Workbench’s Execute SQL Script button instead of its Execute Current Statement button to execute this statement.  
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194433999-c660985c-5e92-45aa-a5e4-ab98d1d174dc.png">
+</p>
 
 7.	Write a SELECT statement that answers this question: Which customers have ordered more than one product? Return these columns:  
 The email_address column from the Customers table  
 The count of distinct products from the customer’s orders  
 Sort the result set in ascending sequence by the email_address column.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194434895-bcdef7a3-1fe4-4c92-af56-5fbfc386f59d.png">
+</p>
 
 8.	Write a SELECT statement that answers this question: What is the total quantity purchased for each product within each category? Return these columns:  
 The category_name column from the category table  
@@ -67,12 +75,16 @@ The total quantity purchased for each product with orders in the Order_Items tab
 Use the WITH ROLLUP operator to include rows that give a summary for each category name as well as a row that gives the grand total.  
 Use the IF and GROUPING functions to replace null values in the category_name and product_name columns with literal values if they’re for summary rows.  
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194436185-41d67b12-e3e8-40ff-b6f6-cb5a5fee45c3.png">
+</p>
 
 9.	Write a SELECT statement that uses an aggregate window function to get the total amount of each order. Return these columns:  
 The order_id column from the Order_Items table  
 The total amount for each order item in the Order_Items table (Hint: You can calculate the total amount by subtracting the discount amount from the item price and then multiplying it by the quantity)  
 The total amount for each order  
 Sort the result set in ascending sequence by the order_id column. 
+
 
 
 10.	Modify the solution to exercise 9 so the column that contains the total amount for each order contains a cumulative total by item amount.  
