@@ -101,24 +101,50 @@ FROM categories c JOIN products p
 ORDER BY category_name
 ```
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194745566-a093034c-1e25-4124-a1aa-b365836e4659.png">
+</p>
 
 12.	Write a SELECT statement that answers this question: Which products have a list price that’s greater than the average list price for all products?  
 Return the product_name and list_price columns for each product.  
 Sort the result set by the list_price column in descending sequence. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194745911-32889954-f63e-4606-a7e0-a0d6ff2f9091.png">
+</p>
 
 13.	Write a SELECT statement that returns the category_name column from the Categories table.  
 Return one row for each category that has never been assigned to any product in the Products table. (Hint: Use a subquery introduced with the NOT EXISTS operator. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194746129-92bf62d5-7764-4d74-bf75-9bdf9c414a08.png">
+</p>
+
 14.	Write a SELECT statement that returns three columns: email_address, order_id, and the order total for each customer. To do this, you can group the result set by the email_address and order_id columns. In addition, you must calculate the order total from the columns in the Order_Items table.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194746825-54510c63-39c7-4836-b7a9-e4271ccf46d0.png">
+</p>
+
 Write a second SELECT statement that uses the first SELECT statement in its FROM clause. The main query should return two columns: the customer’s email address and the largest order for that customer. To do this, you can group the result set by the email_address. Sort the result set by the largest order in descending sequence. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194746885-2802de2e-7d3c-49dd-bd0b-2881e0685a13.png">
+</p>
 
 15.	Write a SELECT statement that returns the name and discount percent of each product that has a unique discount percent. In other words, don’t include products that have the same discount percent as another product.  
-16.	Sort the result set by the product_name column. 
+Sort the result set by the product_name column. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194747129-3e53fa5b-593f-4be4-895a-472f1ed26083.png">
+</p>
 
 16.	Use a correlated subquery to return one row per customer, representing the customer’s oldest order (the one with the earliest date). Each row should include these three columns: email_address, order_id, and order_date.  
 Sort the result set by the order_date and order_id columns. 
+ 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/f012f9e-8ec0-4ab5-89e2-92e503d0a6c9.png">
+</p>
  
 ## Process data types 
 
@@ -128,11 +154,19 @@ A	column that uses the FORMAT function to return the list_price column with 1 di
 A column that uses the CONVERT function to return the list_price column as an integer  
 A column that uses the CAST function to return the list_price column as an integer  
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194748062-b6699e27-67d2-4201-a6f3-968a8b30b032.png">
+</p>
+
 18.	Write a SELECT statement that returns these columns from the Products table:  
 The date_added column  
 A	column that uses the CAST function to return the date_added column with its date only (year, month, and day)  
 A column that uses the CAST function to return the date_added column with just the year and the month  
 A column that uses the CAST function to return the date_added column with its full time only (hour, minutes, and seconds). 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194748156-dedd81a8-e53c-4e22-84d3-5ebf35041e84.png">
+</p> 
  
 ## Use functions 
 
