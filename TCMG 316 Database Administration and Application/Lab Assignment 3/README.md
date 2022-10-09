@@ -53,7 +53,7 @@ Sort the result set in descending sequence by the sum of the line item amounts.
 
 6. Write a SELECT statement that answers this question: What is the total amount ordered for each product? Return these columns:  
 The product_name column from the Products table  
-The total amount for each product in the Order_Items table (Hint: You can calculate the total amount by subtracting the discount amount from the item price and then multiplying it by the quantity)  
+The total amount for each product in the Order_Items table
 Use the WITH ROLLUP operator to include a row that gives the grand total.  
 
 <p align="center">
@@ -82,7 +82,7 @@ Use the IF and GROUPING functions to replace null values in the category_name an
 
 9.	Write a SELECT statement that uses an aggregate window function to get the total amount of each order. Return these columns:  
 The order_id column from the Order_Items table  
-The total amount for each order item in the Order_Items table (Hint: You can calculate the total amount by subtracting the discount amount from the item price and then multiplying it by the quantity)  
+The total amount for each order item in the Order_Items table
 The total amount for each order  
 Sort the result set in ascending sequence by the order_id column. 
 
@@ -115,7 +115,8 @@ Sort the result set by the list_price column in descending sequence.
 </p>
 
 13.	Write a SELECT statement that returns the category_name column from the Categories table.  
-Return one row for each category that has never been assigned to any product in the Products table. (Hint: Use a subquery introduced with the NOT EXISTS operator. 
+Return one row for each category that has never been assigned to any product in the Products table.  
+To do that, use a subquery introduced with the NOT EXISTS operator.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/99063625/194746129-92bf62d5-7764-4d74-bf75-9bdf9c414a08.png">
@@ -153,7 +154,7 @@ Sort the result set by the order_date and order_id columns.
 The list_price column  
 A	column that uses the FORMAT function to return the list_price column with 1 digit to the right of the decimal point  
 A column that uses the CONVERT function to return the list_price column as an integer  
-A column that uses the CAST function to return the list_price column as an integer  
+A column that uses the CAST function to return the list_price column as an integer.  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/99063625/194748062-b6699e27-67d2-4201-a6f3-968a8b30b032.png">
@@ -174,7 +175,11 @@ A column that uses the CAST function to return the date_added column with its fu
 19.	Write a SELECT statement that returns these columns from the Products table:  
 The list_price column  
 The discount_percent column  
-A	column named discount_amount that uses the previous two columns to calculate the discount amount and uses the ROUND function to round the result so it has 2 decimal digits 
+A	column named discount_amount that uses the previous two columns to calculate the discount amount and uses the ROUND function to round the result so it has 2 decimal digits. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194748634-274aba02-b627-4f77-8dd5-1965094a5a86.png">
+</p>
 
 20.	Write a SELECT statement that returns these columns from the Orders table:  
 The order_date column  
@@ -182,10 +187,13 @@ A	column that uses the DATE_FORMAT function to return the four-digit year thatâ€
 A column that uses the DATE_FORMAT function to return the order_date column in this format: Mon-DD-YYYY. In other words, use abbreviated months and separate each date component with dashes.  
 A column that uses the DATE_FORMAT function to return the order_date column with only the hours and minutes on a 12-hour clock with an am/pm indicator A column that uses the DATE_FORMAT function to return the order_date column in this format: MM/DD/YY HH:SS. In other words, use two-digit months, days, and years and separate them by slashes. Use 2-digit hours and minutes on a 24-hour clock. And use leading zeros for all date/time components. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194748952-39f33232-c7fe-48ba-89f1-abf2f5bf3689.png">
+</p>
+
 21.	Write a SELECT statement that returns these columns from the Orders table:  
 The card_number column  
 The length of the card_number column  
-When you get that working right, add the columns that follow to the result set. This is more difficult because these columns require the use of functions within functions.  
 The last four digits of the card_number column  
 A	column that displays an X for each digit of the card_number column except for the last four digits. If the card number contains 16 digits, it should be displayed in this format: XXXX-XXXX-XXXX-1234, where 1234 are the actual last four digits of the number. If the card number contains 15 digits, it should be displayed in this format: XXXX-XXXXXX-X1234. (Hint: Use an IF function to determine which format to use.) 
 
