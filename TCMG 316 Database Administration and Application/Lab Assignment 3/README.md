@@ -1,10 +1,11 @@
-Lab Assignment 3 Instructions: 
+# Lab Assignment 3
  
-Exercises 
+## Exercises 
  
 We assume you have already installed MySQL server and Workbench, as well as the My Guitar Shop database with original data. In these exercises, you’ll use MySQL Workbench to work on the My Guitar Shop database and submit queries to this database. 
  
-Code summary queries 
+### Code summary queries
+
 1.	Write a SELECT statement that returns these columns:   
  The count of the number of orders in the Orders table   
  The sum of the tax_amount columns in the Orders table   
@@ -91,7 +92,7 @@ Sort the result set in ascending sequence by the order_id column.
 Add another column to the SELECT statement that uses an aggregate window function to get the average item amount for each order.  
 Modify the SELECT statement so it uses a named window for the two aggregate functions. 
  
-## Code subqueries
+### Code subqueries
 
 11.	Write a SELECT statement that returns the same result set as this SELECT statement, but don’t use a join. Instead, use a subquery in a WHERE clause that uses the IN keyword.  
 ```
@@ -146,7 +147,7 @@ Sort the result set by the order_date and order_id columns.
   <img src="https://user-images.githubusercontent.com/99063625/f012f9e-8ec0-4ab5-89e2-92e503d0a6c9.png">
 </p>
  
-## Process data types 
+### Process data types 
 
 17.	Write a SELECT statement that returns these columns from the Products table:  
 The list_price column  
@@ -168,7 +169,7 @@ A column that uses the CAST function to return the date_added column with its fu
   <img src="https://user-images.githubusercontent.com/99063625/194748156-dedd81a8-e53c-4e22-84d3-5ebf35041e84.png">
 </p> 
  
-## Use functions 
+### Use functions 
 
 19.	Write a SELECT statement that returns these columns from the Products table:  
 The list_price column  
@@ -214,13 +215,3 @@ The product_name column from the Products table
 A	column named total_sales that shows the sum of the sales for each product with sales in the Order_Items table  
 A column named highest_sales that uses the FIRST_VALUE function to show the name of the product with the highest sales within each category   
 A column named lowest_sales that uses the LAST_VALUE function to show the name of the product with the lowest sales within each category.  
- 
- 
-
-Lab Report Deliverables 
- 
-In the lab report, you must include the following contents: 
-•	Create one screen shot for each of the steps 1 – 25 (2 pts each). 
-•	Your screen shots must include the complete SQL command syntax and the result grid (the results shown in the grid can be incomplete) 
- 
-Name the completed lab report as “LastNameFirstInitialLab3Report” (e.g., MaiBLab3Report.docx).  Submit the Lab report file (Word or PDF format) via the Canvas Lab 3 submission link before the due time. 
