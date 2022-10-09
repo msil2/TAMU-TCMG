@@ -142,9 +142,9 @@ Sort the result set by the product_name column.
 
 16.	Use a correlated subquery to return one row per customer, representing the customer’s oldest order (the one with the earliest date). Each row should include these three columns: email_address, order_id, and order_date.  
 Sort the result set by the order_date and order_id columns. 
- 
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/99063625/f012f9e-8ec0-4ab5-89e2-92e503d0a6c9.png">
+  <img src="https://user-images.githubusercontent.com/99063625/194748482-1e6f95cb-b4aa-4e15-849a-56d6f609c33f.png">
 </p>
  
 ### Process data types 
