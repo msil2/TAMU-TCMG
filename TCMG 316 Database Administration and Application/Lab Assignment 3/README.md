@@ -197,6 +197,10 @@ The length of the card_number column
 The last four digits of the card_number column  
 A	column that displays an X for each digit of the card_number column except for the last four digits. If the card number contains 16 digits, it should be displayed in this format: XXXX-XXXX-XXXX-1234, where 1234 are the actual last four digits of the number. If the card number contains 15 digits, it should be displayed in this format: XXXX-XXXXXX-X1234. (Hint: Use an IF function to determine which format to use.) 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194804461-807bbbe7-853d-4c88-9a3b-2ee534f764de.png">
+</p>
+
 22.	Write a SELECT statement that returns these columns from the Orders table:  
 The order_id column  
 The order_date column  
