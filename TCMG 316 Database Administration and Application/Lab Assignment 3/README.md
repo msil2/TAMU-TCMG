@@ -82,7 +82,7 @@ Use the IF and GROUPING functions to replace null values in the category_name an
 
 9.	Write a SELECT statement that uses an aggregate window function to get the total amount of each order. Return these columns:  
 The order_id column from the Order_Items table  
-The total amount for each order item in the Order_Items table
+The total amount for each order item in the Order_Items table  
 The total amount for each order  
 Sort the result set in ascending sequence by the order_id column. 
 
@@ -209,11 +209,19 @@ The ship_date column if it doesn’t contain a null value
 A column named days_to_ship that shows the number of days between the order date and the ship date  
 When you have this working, add a WHERE clause that retrieves just the orders for March 2018. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194962228-32a5634f-ee0b-4ef8-a077-5dc8603fa0b6.png">
+</p>
+
 23.	Write a SELECT statement that uses regular expression functions to get the username and domain name parts of the email addresses in the Administrators table. Return these columns:  
 The email_address column  
 A	column named user_name that contains the username part of the email_address column (the part before the @ symbol)  
 A column named domain_name that contains the domain name part of the email_address column (the part after the @ symbol)  
 Note: The username part of the email addresses contains only letters, and the domain name part contains only letters and a period. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194963396-4702f9a7-1f0c-4971-a1c8-445354bc2986.png">
+</p>
 
 24.	Write a SELECT statement that uses the ranking functions to rank products by the total quantity sold. Return these columns:  
 The product_name column from the Products table  
@@ -221,9 +229,17 @@ A	column named total_quantity that shows the sum of the quantity for each produc
 A column named rank that uses the RANK function to rank the total quantity in descending sequence   
 A column named dense_rank that uses the DENSE_RANK function to rank the total quantity in descending sequence  
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194970791-87d4432d-7550-4e06-997a-21a8f1ad3c8c.png">
+</p>
+
 25.	Write a SELECT statement that uses the analytic functions to get the highest and lowest sales by product within each category. Return these columns:  
 The category_name column from the Categories table  
 The product_name column from the Products table  
 A	column named total_sales that shows the sum of the sales for each product with sales in the Order_Items table  
 A column named highest_sales that uses the FIRST_VALUE function to show the name of the product with the highest sales within each category   
 A column named lowest_sales that uses the LAST_VALUE function to show the name of the product with the lowest sales within each category.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/194972923-c0f40164-f9a6-4673-a9de-cfd15cdb93fa.png">
+</p>
