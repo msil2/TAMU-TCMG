@@ -51,3 +51,5 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    - Code another UPDATE statement that attempts to insert a first name that’s longer than 20 characters for user 1. It should fail due to the length of the column (2 pts).
 
    ![image](https://user-images.githubusercontent.com/99063625/198136359-e23a8558-9d91-4ef9-b4cb-6e7e471cad80.png)
+
+### How to create views (the following exercises are for the My Guitar Shop database) 
