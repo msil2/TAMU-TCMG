@@ -53,3 +53,36 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    ![image](https://user-images.githubusercontent.com/99063625/198136359-e23a8558-9d91-4ef9-b4cb-6e7e471cad80.png)
 
 ### How to create views (the following exercises are for the My Guitar Shop database) 
+
+6. Create a view named customer_addresses that shows the shipping and billing addresses for each customer (9 pts). 
+
+   This view should return these columns from the Customers table: customer_id, email_address, last_name and first_name. 
+
+   This view should return these columns from the Addresses table: bill_line1, bill_line2, bill_city, bill_state, bill_zip, ship_line1, ship_line2, ship_city, ship_state, and ship_zip
+   
+   ![image](https://user-images.githubusercontent.com/99063625/198140951-bfcd1a9e-6c01-451c-a03d-6737ede9a81d.png)
+
+7. Write a SELECT statement that returns these columns from the customer_addresses view that you created in exercise 6: customer_id, last_name, first_name, bill_line1. The rows in the result should be sorted by the last_name and then first_name columns (2 pts).
+
+   ![image](https://user-images.githubusercontent.com/99063625/198156042-b030937b-fc41-4264-8316-92bb2a531ff2.png)
+ 
+8. Write an UPDATE statement that updates the Customers table using the customer_addresses view you created in exercise 6. Set the first line of the shipping address to “1990 Westwood Blvd.” for the customer with an ID of 8 (2 pts).
+ 
+    ![image](https://user-images.githubusercontent.com/99063625/198156203-3dfed421-5ff0-4bc1-be61-7671de2c102c.png)
+
+9. Create a view named order_item_products that returns columns from the Orders, Order_Items, and Products tables (4 pts).  
+  
+   This view should return these columns from the Orders table: order_id, order_date, tax_amount, and ship_date.  
+   This view should return the product_name column from the Products table.  
+   This view should return these columns from the Order_Items table: item_price, discount_amount, final_price (the discount amount subtracted from the item price), quantity, and item_total (the calculated total for the item).
+   
+   ![image](https://user-images.githubusercontent.com/99063625/198157331-5ffb0386-fe23-47d9-9916-a42cc828dbed.png)
+
+10.  Create a view named product_summary that uses the view you created in exercise 9. This view should return summary information about each product (4 pts). 
+     Each row should include product_name, order_count (the number of times the product has been ordered) and order_total (the total sales for the product).
+     
+     ![image](https://user-images.githubusercontent.com/99063625/198157570-71257da6-b292-41e6-9d68-3f3d97b230a3.png)
+
+11. Write a SELECT statement that uses the view that you created in exercise 10 to get total sales for the five best selling products. Sort the result set by the order_total column in descending sequence (3 pts).
+
+    ![image](https://user-images.githubusercontent.com/99063625/198157831-d5763f6a-49ba-4308-8eca-e8d02e346bba.png)
