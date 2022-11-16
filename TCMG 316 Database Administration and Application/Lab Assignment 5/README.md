@@ -32,6 +32,10 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
    Here, each value is enclosed in double quotes ("), each column is separated by a comma (,) and each row is separated by a pipe character (|). 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202260410-5c417407-7ba7-4820-8947-331d418052df.png">
+</p>
+
 5.  Write a script that creates and calls a stored procedure named test. This procedure should attempt to insert a new category named “Guitars” into the Categories table. If the insert is successful, the procedure should display this message: 
     
     `1 row was inserted.`
@@ -39,6 +43,10 @@ We assume you have already installed MySQL server and Workbench, as well as the 
     If the update is unsuccessful, the procedure should display this message: 
     
     `Row was not inserted - duplicate entry.` 
+ 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202261289-2bcbe05e-a04e-45d1-966e-fd1768801ae8.png">
+</p> 
  
 ### Use transactions and locking 
 
