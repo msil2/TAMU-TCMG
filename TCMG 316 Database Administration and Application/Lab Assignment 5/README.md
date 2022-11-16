@@ -7,10 +7,24 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 ### Writing stored programs  
 
 1. Write a script that creates and calls a stored procedure named test. This stored procedure should declare a variable and set it to the count of all products in the Products table. If the count is greater than or equal to 7, the stored procedure should display a message that says, “The number of products is greater than or equal to 7”. Otherwise, it should say, “The number of products is less than 7”.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202255493-ffe0e0b2-01f7-47db-af63-b4f274832191.png">
+</p>
+
 2. Write a script that creates and calls a stored procedure named test. This stored procedure should use two variables to store (1) the count of all of the products in the Products table and (2) the average list price for those products. If the product count is greater than or equal to 7, the stored procedure should display a result set that displays the values of both variables. Otherwise, the procedure should display a result set that displays a message that says, “The number of products is less than 7”.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202257274-85ebb781-e13c-4030-a80b-f41867917e7b.png">
+</p>
+
 3. Write a script that creates and calls a stored procedure named test. This procedure should calculate the common factors of the numbers 10 and 20. To find a common factor, you can use the modulo operator (%) to check whether a number that’s less than 10 can be evenly divided into both numbers. Then, this procedure should display a string that includes the common factors like this: 
    
    `Common factors of 10 and 20: 1 2 5` 
+   
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202258180-9d517546-c13b-45f9-84c6-06df6897970c.png">
+</p>
    
 4. Write a script that creates and calls a stored procedure named test. This stored procedure should create a cursor for a result set that consists of the product_name and list_price columns for each product with a list price that’s greater than $700. The rows in this result set should be sorted in descending sequence by list price. Then, the procedure should display a string variable that includes the product_name and list price for each product so it looks something like this: 
 
