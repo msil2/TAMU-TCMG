@@ -185,3 +185,7 @@ We assume you have already installed MySQL server and Workbench, as well as the 
      Create an event that deletes any rows in the Products_Audit table that are older than 1 week. (You created the Products_Audit table in exercise 3.) MySQL should run this event every day. To make sure that this event has been created, code a SHOW EVENTS statement that views this event.  
    
      Once you’re sure this event is working correctly, code a DROP EVENT statement that drops the event. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202366526-0de083ea-fda9-4209-a782-019d0503eb7b.png">
+</p>
