@@ -56,7 +56,7 @@ We assume you have already installed MySQL server and Workbench, as well as the 
   <img src="https://user-images.githubusercontent.com/99063625/202263923-db508235-7644-435e-8a00-62e29aba9ead.png">
 </p>
 
-8. Write a script that creates and calls a stored procedure named test. This procedure should include these statements coded as a transaction: 
+7. Write a script that creates and calls a stored procedure named test. This procedure should include these statements coded as a transaction: 
   
    ```
    INSERT INTO orders VALUES  
@@ -141,7 +141,14 @@ We assume you have already installed MySQL server and Workbench, as well as the 
      If the value for the discount_percent column is a negative number, the stored procedure should raise an error that the value for this column must be a positive number.  
      
      Code at least two CALL statements that test this procedure. 
- 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202353810-4dc77d63-b0a3-4b79-a477-0b562c093b1d.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202353977-b6c1dd43-68a1-423c-8f58-05558429f8ff.png">
+</p>
+
 ### Create triggers and events 
 
 14.  Create a trigger named products_before_update that checks the new value for the discount_percent column of the Products table. This trigger should raise an appropriate error if the discount percent is greater than 100 or less than 0. 
