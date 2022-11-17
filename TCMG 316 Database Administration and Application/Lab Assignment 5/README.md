@@ -111,9 +111,16 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
 10.  Write a script that creates and calls a stored function named discount_price that calculates the discount price of an item in the Order_Items table (discount amount subtracted from item price). To do that, this function should accept one parameter for the item ID, and it should return the value of the discount price for that item. 
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202348402-a1e76706-0366-440e-8c02-4a0adc04bb25.png">
+</p>
 
 11.  Write a script that creates and calls a stored function named item_total that calculates the total amount of an item in the Order_Items table (discount price multiplied by quantity). To do that, this function should accept one parameter for the item ID, it should use the discount_price function that you created in exercise 2, and it should return the value of the total for that item. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202349183-f4fc15b1-e99b-479e-a001-e4ef600621e9.png">
+</p>
+
 12.  Write a script that creates and calls a stored procedure named insert_product that inserts a row into the Products table. This stored procedure should accept five parameters, one for each of these columns: category_id, product_code, product_name, list_price, and discount_percent. 
  
      This stored procedure should set the description column to an empty string, and it should set the date_added column to the current date.  
@@ -121,6 +128,13 @@ We assume you have already installed MySQL server and Workbench, as well as the 
      If the value for the list_price column is a negative number, the stored procedure should raise an error that indicates that this column doesn’t accept negative numbers. Similarly, the procedure should raise an error if the value for the discount_percent column is a negative number. 
 
      Code at least two CALL statements that test this procedure.
+     
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202351845-c2e8bdc4-5707-4072-a3ae-16f42a3c3c89.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202351437-f6791adc-f621-4444-8422-9e8e77bc7262.png">
+</p>
      
 13.  Write a script that creates and calls a stored procedure named update_product_discount that updates the discount_percent column in the Products table. This procedure should have one parameter for the product ID and another for the discount percent. 
      
@@ -133,6 +147,11 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 14.  Create a trigger named products_before_update that checks the new value for the discount_percent column of the Products table. This trigger should raise an appropriate error if the discount percent is greater than 100 or less than 0. 
 
      If the new discount percent is between 0 and 1, this trigger should modify the new discount percent by multiplying it by 100. That way, a discount percent of .2 becomes 20. 
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202336232-bfbf1884-aa8c-44dc-bd5f-5c5f6a3a5618.png">
+</p>
 
 15.  Create a table named Products_Audit. This table should have all columns of the Products table, except the description column. Also, it should have an audit_id column for its primary key, and the date_added column should be changed to date_updated.  
      
