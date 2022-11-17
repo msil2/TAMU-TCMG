@@ -164,6 +164,22 @@ We assume you have already installed MySQL server and Workbench, as well as the 
      
      Create a trigger named products_after_update. This trigger should insert the old data about the product into the Products_Audit table after the row is updated. Then, test this trigger with an appropriate UPDATE statement. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202363882-199c95de-c14a-4970-a753-3e940357e576.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202364161-15d1515f-afd4-4fef-b932-d7e97619b8b6.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202365422-97e46a97-b7d7-4192-bee3-c94bb1f1c565.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202364454-b76cafb8-c995-4581-ae71-607aa8957c7f.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202365639-71af14d1-b3f1-415a-874d-863f8e5c6268.png">
+</p>
+
 16.  Check whether the event scheduler is turned on. If it isn’t, code a statement that turns it on.  
      
      Create an event that deletes any rows in the Products_Audit table that are older than 1 week. (You created the Products_Audit table in exercise 3.) MySQL should run this event every day. To make sure that this event has been created, code a SHOW EVENTS statement that views this event.  
