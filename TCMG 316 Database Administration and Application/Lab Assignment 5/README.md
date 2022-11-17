@@ -51,7 +51,12 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 ### Use transactions and locking 
 
 6. Write a script that creates and calls a stored procedure named test. This procedure should include two SQL statements coded as a transaction to delete the row with a customer ID of 8 from the Customers table. To do this, you must first delete all addresses for that customer from the Addresses table. If these statements execute successfully, commit the changes, and display a message of 'The transaction was committed'. Otherwise, roll back the changes, and display a message of 'The transaction was rolled back'.  
-7. Write a script that creates and calls a stored procedure named test. This procedure should include these statements coded as a transaction: 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202263923-db508235-7644-435e-8a00-62e29aba9ead.png">
+</p>
+
+8. Write a script that creates and calls a stored procedure named test. This procedure should include these statements coded as a transaction: 
   
    ```
    INSERT INTO orders VALUES  
@@ -72,6 +77,10 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 
    If these statements execute successfully, commit the changes, and display a message of 'The transaction was committed'. Otherwise, roll back the changes, and display a message of 'The transaction was rolled back'. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202282704-35642857-75d3-458c-b635-2982decb042b.png">
+</p>
+
 8. Write a script that creates and calls a stored procedure named test. This procedure should use a transaction that includes the statements necessary to combine two customers. These statements should do the following:  
 
    Select a row from the Customers table for the customer with a customer_id value of 6.  This statement should lock the row so other transactions can’t read or modify it until the transaction commits, and it should fail immediately if the row is locked from another session.  
@@ -84,13 +93,26 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    
    If these statements execute successfully, commit the changes, and display a message of 'The transaction was committed'. Otherwise, roll back the changes, and display a message of 'The transaction was rolled back'. 
  
+ ![image](https://user-images.githubusercontent.com/99063625/202315174-edb99504-e93b-4f1c-bc79-130721ee69f9.png)
+
+ 
 ### Create stored procedures and functions 
 
 9. Write a script that creates and calls a stored procedure named insert_category. First, code a statement that creates a procedure that adds a new row to the Categories table. To do that, this procedure should have one parameter for the category name.  
    
    Code at least two CALL statements that test this procedure. (Note that this table doesn’t allow duplicate category names). 
    
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202326783-980538ce-372b-4dc3-aca4-91dfc7f2746d.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/202327695-d63663fa-ed18-4897-b3df-0734948aa8ec.png">
+</p>
+
 10.  Write a script that creates and calls a stored function named discount_price that calculates the discount price of an item in the Order_Items table (discount amount subtracted from item price). To do that, this function should accept one parameter for the item ID, and it should return the value of the discount price for that item. 
+
+
+
 11.  Write a script that creates and calls a stored function named item_total that calculates the total amount of an item in the Order_Items table (discount price multiplied by quantity). To do that, this function should accept one parameter for the item ID, it should use the discount_price function that you created in exercise 2, and it should return the value of the total for that item. 
 12.  Write a script that creates and calls a stored procedure named insert_product that inserts a row into the Products table. This stored procedure should accept five parameters, one for each of these columns: category_id, product_code, product_name, list_price, and discount_percent. 
  
