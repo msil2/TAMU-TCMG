@@ -11,6 +11,9 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 3. Write and execute a SELECT statement that selects these three columns from the Customers table: email_address, first_name, last_name. Your screen shot must include full SQL syntax and the result grid (2 pts).
 4. Use a SET statement to temporarily disable the general log. Then, to make sure this variable was set, use a SELECT statement to view the variable.  Your screen shot must include full SQL syntax and the result grid (2 pts). 
 5. Use a SELECT statement to view the system variables that enable and disable the binary log and the error log. Your screen shot must include full SQL syntax and the result grid (2 pts).
+
+### Database security
+
 6. Write and execute a script that creates a user with a username “mikem” and password “sesame”. This user should be able to connect to MySQL from any computer.  
  
    This user should have SELECT, INSERT, UPDATE, and DELETE privileges for the Customers, Addresses, Orders, and Order_Items tables of the My Guitar Shop database. However, this user should only have SELECT privileges for the Products and Categories tables. Also, this user should not have the right to grant privileges to other users.  
@@ -30,6 +33,8 @@ We assume you have already installed MySQL server and Workbench, as well as the 
     Check the privileges for the role by using the SHOW GRANTS statement. 
     
     Your screenshot must show full SQL syntax, and the result grid for the SHOW GRANTS statement. (6 pts).
+    
+### Database backup    
     
 12. Start a command prompt, change to the appropriate directory and use the mysqldump program to create a full backup of the My Guitar Shop database. The backup file name should be “lab6.sql”. Your screen shot should show the full syntax of the command prompt statements. (4 pts). 
 13. Open File Explorer, and navigate to the directory where you store the backup file lab6.sql. Take a screen shot of the file explore directory where lab6.sql is stored. (2 pts). 
