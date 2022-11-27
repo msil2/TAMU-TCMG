@@ -7,9 +7,44 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 ### Introduction to database administration
 
 1. Start MySQL Workbench and open the Client Connections window. If the process list isn’t displayed, click on the Refresh button to display it. Note the number of processes in the list. Make a screen shot for the Client Connections window (2 pts). Then, return to the Home tab, open another connection for the root user, and select a different database as the current database. Next, return to the Client Connections window and refresh the process to see that it includes two additional processes for the new connection. Make another screen shot showing the new Client Connections window (2 pts).
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127088-6e990900-07b5-4a64-8899-8261cd65ef9b.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127356-c7719e2c-32fe-45c0-b251-e278ca794f93.png">
+</p>
+
 2. In MySQL Workbench, use the Status and System Variables item from the Navigator window to view these status variables: com_select, max_used_connections, and uptime; and these system variables: basedir and datadir. In the lab report, include screen shots showing both the value and description of each of the three status variables (you must show the full descriptions); also include screen shots showing both the paths to and the description of the two system variables (you must show the full path and full descriptions). You should provide a total of 5 screen shots (1 pt each). 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127599-1de9754d-5955-4d3d-ba65-1314b441f2b3.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127633-4d5494ee-9e8d-4e7f-89bc-8fca8d3b7621.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127649-76132343-2e15-46d6-9917-f427eb006051.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127673-8855ff5e-ab42-4f66-b93c-1e50ca608842.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127700-ff0cc3ba-8d80-4756-86c1-afe6e2668c94.png">
+</p>
+
 3. Write and execute a SELECT statement that selects these three columns from the Customers table: email_address, first_name, last_name. Your screen shot must include full SQL syntax and the result grid (2 pts).
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204127963-3a221d63-b7c1-4af4-9a58-8393bcfaa657.png">
+</p>
+
 4. Use a SET statement to temporarily disable the general log. Then, to make sure this variable was set, use a SELECT statement to view the variable.  Your screen shot must include full SQL syntax and the result grid (2 pts). 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204128100-8c78c58a-c68b-4e31-8d63-9dc873fedba1.png">
+</p>
+
 5. Use a SELECT statement to view the system variables that enable and disable the binary log and the error log. Your screen shot must include full SQL syntax and the result grid (2 pts).
 
 ### Database security
