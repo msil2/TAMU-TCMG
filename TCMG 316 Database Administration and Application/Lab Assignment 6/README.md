@@ -100,4 +100,13 @@ We assume you have already installed MySQL server and Workbench, as well as the 
 ### Database backup    
     
 12. Start a command prompt, change to the appropriate directory and use the mysqldump program to create a full backup of the My Guitar Shop database. The backup file name should be “lab6.sql”. Your screen shot should show the full syntax of the command prompt statements. (4 pts). 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204962859-c299074d-6626-43ec-8bc3-6c6135ffd5df.png">
+</p>
+
 13. Open File Explorer, and navigate to the directory where you store the backup file lab6.sql. Take a screen shot of the file explore directory where lab6.sql is stored. (2 pts). 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204962669-91bea538-74bd-47e7-baa6-39691b3f7ccc.png">
+</p>
