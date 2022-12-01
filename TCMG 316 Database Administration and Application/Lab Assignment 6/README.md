@@ -97,6 +97,10 @@ We assume you have already installed MySQL server and Workbench, as well as the 
     
     Your screenshot must show full SQL syntax, and the result grid for the SHOW GRANTS statement. (6 pts).
     
+    <p align="center">
+      <img src="https://user-images.githubusercontent.com/99063625/204966339-df87109f-6093-402d-bc23-657fd3bc4c66.png">
+    </p>
+    
 ### Database backup    
     
 12. Start a command prompt, change to the appropriate directory and use the mysqldump program to create a full backup of the My Guitar Shop database. The backup file name should be “lab6.sql”. Your screen shot should show the full syntax of the command prompt statements. (4 pts). 
