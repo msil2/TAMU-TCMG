@@ -58,15 +58,35 @@ We assume you have already installed MySQL server and Workbench, as well as the 
    This user should have SELECT, INSERT, UPDATE, and DELETE privileges for the Customers, Addresses, Orders, and Order_Items tables of the My Guitar Shop database. However, this user should only have SELECT privileges for the Products and Categories tables. Also, this user should not have the right to grant privileges to other users.  
 
    Your screen shot should show the full SQL syntax (6 pts).
-   
+
    <p align="center">
-     <img src="https://user-images.githubusercontent.com/99063625/204896736-9eb9fcdb-fe21-4918-a50a-50d3a0426efb.png">
+     <img src="https://user-images.githubusercontent.com/99063625/204951537-88326d57-91db-4336-a3fd-96c795b2e171.png">
    </p>
    
 7. Check the privileges for user mikem by using the SHOW GRANTS statement. Your screen shot must show the full SQL syntax and the full result grid information (you should adjust the boundary of the result grid to show the full text). (2 pts) 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204948001-d015577f-c6aa-452a-bbba-db82b9790516.png">
+</p>
+
 8. Write and execute a script that revokes the DELETE privilege on the Orders and Order_Items tables from this user. Your screen shot should show the full SQL syntax. (4 pts) 
-9. Write and execute a script that changes the password expiration policy for the user mikem so the password expires immediately. Your screen shot should show the full SQL syntax. (2 pts) 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204948568-48fc83f7-f773-4fde-a7e8-f1edf79d314a.png">
+</p>
+
+9. Write and execute a script that changes the password expiration policy for the user mikem so the password expires immediately. Your screen shot should show the full SQL syntax. (2 pts)  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204950357-72436719-bc04-4a51-9a43-2eedccfd172b.png">
+</p>
+
 10. Write and execute a script that creates another user with a username “anneb” and password “sesame”. This user should only be able to connect from the same computer as the computer that’s running the MySQL server. Your screen shot should show the full SQL syntax. (2 pts) 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99063625/204952595-71129211-8992-4aef-96d1-4b6992db7677.png">
+</p>
+
 11. Write and execute a script that creates a role named clerk. The role should have the SELECT privilege for the Customers, Addresses, Orders, and Line_Items tables of the My Guitar Shop database.
     
     Assign the user anneb to the new role. 
